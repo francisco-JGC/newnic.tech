@@ -1,3 +1,5 @@
+@use '@/scss/index' as *;
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,10 +19,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: $background-color;
+  color: #fff;
 }
 
 .main-page {
   width: 100%;
-  max-width: 1080px;
-  background-color: tomato;
+  display: grid;
+  place-items: center;
+
+  &-container {
+    width: 100%;
+    max-width: $max-width;
+  }
+}
+
+::selection {
+  color: #ffffff;
+  background-color: $secondary-color;
 }
