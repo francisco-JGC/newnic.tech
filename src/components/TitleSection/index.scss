@@ -1,0 +1,26 @@
+@use '@/scss/index' as *;
+
+.title-section {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  small {
+    color: $secondary-color;
+  }
+
+  h1 {
+    margin-bottom: 0.8em;
+    font-family: 'GatterSans', sans-serif;
+    font-size: 2em;
+    width: 70%;
+    color: #fff;
+    -webkit-text-stroke: 1px #fefefe;
+  }
+
+  p {
+    color: #d9d9d9;
+  }
+}
