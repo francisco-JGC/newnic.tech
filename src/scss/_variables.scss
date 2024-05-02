@@ -2,9 +2,10 @@
 $primary-color: #5918df;
 $secondary-color: #e759f7;
 $background-color: #06040d;
+$border-color: #333;
 
 // shadows
-$box-shadow: 0 4px 10px rgba($primary-color);
+$box-shadow: 0 4px 10px rgb($primary-color, 0.2);
 
 // borders
 $border-radius: 5px;
@@ -20,3 +21,5 @@ $padding-mobile: 0 1em;
 // width rules
 $mobile-widht: 600px;
 $desktop-widht: 1200px;
+
+$max-width: 1080px;
