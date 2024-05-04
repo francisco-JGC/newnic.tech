@@ -1,9 +1,16 @@
 @use '@/scss/index' as *;
 
-.home-section {
+.home-container {
   display: flex;
+  width: 100%;
   flex-direction: column;
-  gap: 2em;
   align-items: center;
-  margin-top: 2em;
+  gap: 5em;
+  .home-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    margin-top: 2em;
+  }
 }
