@@ -7,6 +7,9 @@
   position: fixed;
   height: 80px;
   border-bottom: 1px solid rgb($border-color, 0.5);
+  backdrop-filter: blur(7px);
+  z-index: 1000;
+  background-color: rgba($background-color, 0.5);
 
   &-container {
     display: flex;
