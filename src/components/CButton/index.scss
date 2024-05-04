@@ -1,0 +1,55 @@
+@use '@/scss/index' as *;
+
+.c-button {
+  padding: 0.5rem 1.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.default-button {
+  background-color: #fff;
+  color: $primary-color;
+  font-weight: 600;
+  clip-path: polygon(100% 0, 100% 50%, 89% 100%, 0 100%, 0 0);
+
+  &:hover {
+    background-color: $primary-color;
+    color: #fff;
+    clip-path: polygon(89% 0, 100% 50%, 100% 100%, 0 100%, 0 0);
+  }
+}
+
+.modern-button {
+  background: linear-gradient(90deg, #1e2831, #11111d);
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transition: width 0.3s ease;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+
+  &:hover {
+    background: linear-gradient(90deg, #11111d, #1e2831);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    width: 20%;
+  }
+}
