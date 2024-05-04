@@ -1,0 +1,42 @@
+@use '@/scss/index' as *;
+
+.process-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+
+  small {
+    color: $secondary-color;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+
+    .process-item-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      width: calc(1080px / 3 - 2em);
+
+      img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+      }
+
+      h3 {
+        font-size: 1.2em;
+        font-weight: 600;
+      }
+      p {
+        font-size: 0.9em;
+        text-align: justify;
+        margin-top: 0.5em;
+      }
+    }
+  }
+}
