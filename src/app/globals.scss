@@ -23,17 +23,6 @@ body {
   color: #fff;
 }
 
-.main-page {
-  width: 100%;
-  display: grid;
-  place-items: center;
-
-  &-container {
-    width: 100%;
-    max-width: $max-width;
-  }
-}
-
 ::selection {
   color: #ffffff;
   background-color: $secondary-color;
