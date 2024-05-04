@@ -1,0 +1,9 @@
+@use '@/scss/index' as *;
+
+.home-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  margin-top: 2em;
+}
