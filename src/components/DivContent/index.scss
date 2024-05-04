@@ -1,0 +1,8 @@
+@use '@/scss/index' as *;
+
+.div-content {
+  background: linear-gradient(180deg, #2f2038, #18151f);
+  border-radius: $border-radius;
+  border: 1px solid #333333;
+  padding: 1em;
+}
