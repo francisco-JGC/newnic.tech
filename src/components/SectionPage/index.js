@@ -9,14 +9,23 @@ export const SectionPage = ({
   small,
   children,
   className,
+  showBackground = false,
+  titleSize,
 }) => {
   return (
     <div className={`section-page`}>
       <section className={`section-page-content ${className}`}>
-        <div className="section-page-background">
-          <Image src={backgroundBlock} alt={title} />
-        </div>
-        <TitleSection title={title} description={description} small={small} />
+        {showBackground && (
+          <div className="section-page-background">
+            <Image src={backgroundBlock} alt={title} />
+          </div>
+        )}
+        <TitleSection
+          title={title}
+          description={description}
+          small={small}
+          titleSize={titleSize}
+        />
         {children}
       </section>
     </div>
