@@ -1,0 +1,15 @@
+@use '@/scss/index' as *;
+
+.section-page {
+  width: 100lvw;
+  padding: 2em 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-content {
+    width: 100%;
+    max-width: $max-width;
+  }
+}
