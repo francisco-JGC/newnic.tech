@@ -1,5 +1,9 @@
 import './index.scss'
 
-export const DivContent = ({ children, className }) => {
-  return <div className={`div-content ${className}`}>{children}</div>
+export const DivContent = ({ children, className, style }) => {
+  return (
+    <div className={`div-content ${className}`} style={style}>
+      {children}
+    </div>
+  )
 }
