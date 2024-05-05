@@ -74,3 +74,19 @@
     }
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .contact-section {
+    flex-direction: column;
+    gap: 4em;
+
+    .social-media {
+      width: 100%;
+      gap: 3em;
+    }
+
+    .contact-form {
+      width: 100%;
+    }
+  }
+}
