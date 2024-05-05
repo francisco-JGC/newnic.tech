@@ -1,3 +1,4 @@
+import { Toaster } from 'sonner'
 import { Montserrat } from 'next/font/google'
 import './globals.scss'
 
@@ -20,6 +21,8 @@ export default function RootLayout({ children }) {
         <main className="main-page mt-20">
           <div className="main-page-container">{children}</div>
         </main>
+
+        <Toaster expand={false} position="bottom-center" />
       </body>
     </html>
   )
