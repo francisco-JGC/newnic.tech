@@ -45,3 +45,21 @@
     }
   }
 }
+
+@include mobile {
+  .title-section {
+    small {
+      width: 100%;
+    }
+    h1 {
+      font-size: 1.8em !important;
+    }
+    h2 {
+      font-size: 1.2em !important;
+    }
+
+    p {
+      font-size: 0.9em;
+    }
+  }
+}
