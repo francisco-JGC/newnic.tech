@@ -8,7 +8,7 @@ import menuLinesIcon from '@/assets/icons/menu-lines.svg'
 import { NavLink } from '../Navigation/navLink'
 
 export const Header = () => {
-  const [openMenu, setOpenMenu] = useState(true)
+  const [openMenu, setOpenMenu] = useState(false)
   const headerRef = useRef(null)
 
   const handleOpenMenu = () => {
