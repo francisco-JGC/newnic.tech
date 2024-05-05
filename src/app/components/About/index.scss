@@ -1,6 +1,6 @@
 @use '@/scss/index' as *;
 
-.benefits-content {
+.about-content {
   display: flex;
   justify-content: space-between;
   margin-top: 4em;
@@ -49,7 +49,7 @@
   &__icons {
     width: 100%;
 
-    .icons-info-benefits {
+    .icons-info-about {
       display: flex;
       justify-content: space-between;
       align-items: center;

@@ -27,9 +27,9 @@ const DATA_ICONS = [
   },
 ]
 
-export const IconsInformationBenefits = () => {
+export const IconsInformationAbout = () => {
   return (
-    <section className="icons-info-benefits">
+    <section className="icons-info-about">
       {DATA_ICONS.map((item, index) => (
         <div key={index} className="icon-item">
           <Image src={item.icon} alt={item.title} />

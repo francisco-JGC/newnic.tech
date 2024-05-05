@@ -4,12 +4,12 @@ import { CButton } from '@/components/CButton'
 import benefits from '@/assets/images/benefits-product.webp'
 import { NavLink } from '@/components/Navigation/navLink'
 import Image from 'next/image'
-import { IconsInformationBenefits } from './iconsInformation'
+import { IconsInformationAbout } from './iconsInformation'
 
-export const Benefits = () => {
+export const About = () => {
   return (
-    <div className="benefits-content">
-      <div className="benefits-content__info">
+    <div className="about-content">
+      <div className="about-content__info">
         <p>
           En <strong>NewNic</strong>, estamos aquí para ayudarte a hacer
           realidad tus ideas tecnológicas. Nos dedicamos a proporcionar
@@ -27,7 +27,7 @@ export const Benefits = () => {
           <NavLink href={'#contact'}>Contáctanos</NavLink>
         </CButton>
       </div>
-      <div className="benefits-content__img">
+      <div className="about-content__img">
         <Image
           src={benefits}
           alt="beneficios newnic"
@@ -36,8 +36,8 @@ export const Benefits = () => {
           height={300}
         />
       </div>
-      <div className="benefits-content__icons">
-        <IconsInformationBenefits />
+      <div className="about-content__icons">
+        <IconsInformationAbout />
       </div>
     </div>
   )
