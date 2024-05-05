@@ -4,6 +4,7 @@ import { CButton } from '@/components/CButton'
 import benefits from '@/assets/images/benefits-product.webp'
 import { NavLink } from '@/components/Navigation/navLink'
 import Image from 'next/image'
+import { IconsInformationBenefits } from './iconsInformation'
 
 export const Benefits = () => {
   return (
@@ -35,7 +36,9 @@ export const Benefits = () => {
           height={300}
         />
       </div>
-      <div className="benefits-content__icons"></div>
+      <div className="benefits-content__icons">
+        <IconsInformationBenefits />
+      </div>
     </div>
   )
 }
