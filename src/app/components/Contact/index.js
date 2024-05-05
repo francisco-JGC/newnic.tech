@@ -183,7 +183,7 @@ export const Contact = () => {
           ></textarea>
         </div>
 
-        <div>
+        <div className="submit-button">
           <CButton>Enviar</CButton>
         </div>
       </form>
