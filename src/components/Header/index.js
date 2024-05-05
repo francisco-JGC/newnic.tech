@@ -5,6 +5,7 @@ import newnicLogo from '@/assets/logo/newnicweb.webp'
 import Image from 'next/image'
 import { useState, useRef } from 'react'
 import menuLinesIcon from '@/assets/icons/menu-lines.svg'
+import { NavLink } from '../Navigation/navLink'
 
 export const Header = () => {
   const [openMenu, setOpenMenu] = useState(true)
@@ -33,7 +34,9 @@ export const Header = () => {
     <header className="header" ref={headerRef}>
       <div className="header-container">
         <div className="logo-container">
-          <Image src={newnicLogo} alt="Newnic Logo" />
+          <NavLink href="/">
+            <Image src={newnicLogo} alt="Newnic Logo" />
+          </NavLink>
         </div>
 
         <section className={`header-navigation ${openMenu ? 'open' : ''}`}>
