@@ -1,0 +1,76 @@
+@use '@/scss/index' as *;
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2em;
+  width: 100%;
+
+  .social-media {
+    width: calc(60% - 1em);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-icons {
+      display: flex;
+      gap: 2em;
+    }
+
+    &-locations {
+      display: flex;
+      gap: 3em;
+      .contact-info {
+        display: flex;
+        gap: 1em;
+        h3 {
+          font-weight: 600;
+        }
+        span {
+          color: $text-color;
+        }
+      }
+    }
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: calc(40% - 1em);
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 100%;
+
+      [type='text'],
+      [type='email'],
+      textarea,
+      select {
+        padding: 0.8em;
+        background: linear-gradient(180deg, #2f2038, #18151f);
+        border-radius: $border-radius;
+        border: 1px solid #333333;
+        position: relative;
+        font-size: 0.9em;
+      }
+
+      option {
+        background-color: #222;
+      }
+
+      label {
+        position: relative;
+        font-weight: 600;
+        margin-bottom: 0.5em;
+
+        span {
+          color: red;
+        }
+      }
+    }
+  }
+}
