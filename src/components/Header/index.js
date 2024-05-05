@@ -3,7 +3,7 @@ import './index.scss'
 import { Navigation } from '../Navigation'
 import newnicLogo from '@/assets/logo/newnicweb.webp'
 import Image from 'next/image'
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import menuLinesIcon from '@/assets/icons/menu-lines.svg'
 import { NavLink } from '../Navigation/navLink'
 
@@ -14,8 +14,31 @@ export const Header = () => {
   const handleOpenMenu = () => {
     setOpenMenu(!openMenu)
   }
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      let lastScrollTop = 0
 
-  let lastScrollTop = 0
+      const handleScroll = () => {
+        const header = headerRef.current
+        const scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop
+
+        if (scrollTop > lastScrollTop) {
+          header?.classList.add('header-container--hide')
+        } else {
+          header?.classList.remove('header-container--hide')
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop
+      }
+
+      window.addEventListener('scroll', handleScroll)
+
+      return () => {
+        window.removeEventListener('scroll', handleScroll)
+      }
+    }
+  }, [])
 
   return (
     <header className="header" ref={headerRef}>
