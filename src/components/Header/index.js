@@ -5,6 +5,7 @@ import newnicLogo from '@/assets/logo/newnicweb.webp'
 import Image from 'next/image'
 import { useState, useRef, useEffect } from 'react'
 import menuLinesIcon from '@/assets/icons/menu-lines.svg'
+import xIcon from '@/assets/icons/x.svg'
 import { NavLink } from '../Navigation/navLink'
 
 export const Header = () => {
@@ -54,7 +55,11 @@ export const Header = () => {
         </section>
 
         <div className="menu-mobile" onClick={handleOpenMenu}>
-          <Image src={menuLinesIcon} alt="Menu Icon" />
+          <Image
+            src={openMenu ? xIcon : menuLinesIcon}
+            alt="Menu Icon"
+            layout="responsive"
+          />
 
           {openMenu && (
             <div className="menu-mobile-overlay" onClick={handleOpenMenu}>
