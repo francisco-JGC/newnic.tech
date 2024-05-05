@@ -17,21 +17,6 @@ export const Header = () => {
 
   let lastScrollTop = 0
 
-  if (typeof window !== 'undefined') {
-    window.addEventListener('scroll', () => {
-      const header = headerRef.current
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop
-
-      if (scrollTop > lastScrollTop) {
-        header?.classList.add('header-container--hide')
-      } else {
-        header?.classList.remove('header-container--hide')
-      }
-
-      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop
-    })
-  }
-
   return (
     <header className="header" ref={headerRef}>
       <div className="header-container">

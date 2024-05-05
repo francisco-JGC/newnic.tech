@@ -1,4 +1,3 @@
-'use client'
 import './index.scss'
 import { ContentIcon } from '@/components/ContentIcon'
 import idea from '@/assets/icons/idea.svg'
@@ -7,8 +6,6 @@ import settings from '@/assets/icons/settings.svg'
 import speed from '@/assets/icons/speed.svg'
 import star from '@/assets/icons/star.svg'
 import shield from '@/assets/icons/shield.svg'
-import ScrollReveal from 'scrollreveal'
-import { useEffect } from 'react'
 
 const DATA_ICONS = [
   {
@@ -50,17 +47,6 @@ const DATA_ICONS = [
 ]
 
 export const Benefits = () => {
-  useEffect(() => {
-    DATA_ICONS.forEach((_, index) => {
-      ScrollReveal().reveal(`.icon-item:nth-child(${index + 1})`, {
-        delay: 100 * index,
-        duration: 500,
-        origin: 'left',
-        distance: '30px',
-      })
-    })
-  }, [])
-
   return (
     <section className="icons-info-benefits">
       {DATA_ICONS.map((item, index) => (

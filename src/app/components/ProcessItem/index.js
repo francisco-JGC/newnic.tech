@@ -1,12 +1,9 @@
-'use client'
 import './index.scss'
 import { DivContent } from '@/components/DivContent'
 import cameraVideoIcon from '@/assets/icons/camera-video.svg'
 import codeDevIcon from '@/assets/icons/code-dev.svg'
 import fileIcon from '@/assets/icons/file.svg'
 import Image from 'next/image'
-import ScrollReveal from 'scrollreveal'
-import { useEffect } from 'react'
 
 const DATA_PROCESS_ITEM = [
   {
@@ -30,16 +27,6 @@ const DATA_PROCESS_ITEM = [
 ]
 
 export const ProcessItem = () => {
-  useEffect(() => {
-    DATA_PROCESS_ITEM.forEach((_, index) => {
-      ScrollReveal().reveal(`.process-item-content:nth-child(${index + 1})`, {
-        delay: 200 * index,
-        duration: 500,
-        origin: 'top',
-        distance: '30px',
-      })
-    })
-  }, [])
   return (
     <section className="process-item">
       <small>Nuestro proceso</small>
