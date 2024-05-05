@@ -10,13 +10,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2em;
+    gap: 4em;
 
     .services-item-content {
       display: flex;
       flex-direction: column;
       gap: 1em;
-      width: calc(1080px / 3 - 2em);
+      width: calc(1080px / 3 - 3em);
       height: 420px;
 
       .services-content-text {
