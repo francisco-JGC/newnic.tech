@@ -21,5 +21,23 @@
     .services {
       margin-top: 5em;
     }
+
+    .time-lapse {
+      position: relative;
+      margin-top: 5em;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .benefits-section {
+    margin-top: 3em;
   }
 }
