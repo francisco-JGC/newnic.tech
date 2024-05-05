@@ -10,6 +10,7 @@ import linkedin from '@/assets/icons/linkedin.svg'
 import clockIcon from '@/assets/icons/clock-primary.svg'
 import location from '@/assets/icons/location.svg'
 import Image from 'next/image'
+import { toast } from 'sonner'
 
 export const Contact = () => {
   const [name, setName] = useState('')
@@ -17,9 +18,31 @@ export const Contact = () => {
   const [service, setService] = useState('')
   const [message, setMessage] = useState('')
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    console.log({ name, email, service, message })
+    toast.loading('Enviando mensaje...')
+    const response = await fetch('/api/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ username: name, email, service, message }),
+    })
+
+    toast.dismiss()
+
+    if (response.ok) {
+      // setName('')
+      // setEmail('')
+      setService('')
+      setMessage('')
+
+      toast.success('Gracias por tu mensaje, te responderemos pronto')
+    } else {
+      toast.error('Ocurrió un error al enviar el mensaje', {
+        description: 'Por favor intenta de nuevo',
+      })
+    }
   }
 
   return (
