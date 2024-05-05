@@ -11,9 +11,10 @@ export const SectionPage = ({
   className,
   showBackground = false,
   titleSize,
+  id,
 }) => {
   return (
-    <div className={`section-page`}>
+    <div className={`section-page`} id={id}>
       <section className={`section-page-content ${className}`}>
         {showBackground && (
           <div className="section-page-background">
