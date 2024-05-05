@@ -43,3 +43,23 @@
     margin-top: 3em;
   }
 }
+
+@include mobile {
+  .home-container {
+    .services-section {
+      .services {
+        margin-top: 2em;
+      }
+
+      .time-lapse {
+        margin-top: 2em;
+      }
+    }
+
+    .about-section,
+    .benefits-section,
+    .contact-section {
+      margin-top: 2em;
+    }
+  }
+}
