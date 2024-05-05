@@ -63,7 +63,7 @@ export default function Home() {
 
       <SectionPage
         title="Descubre los Beneficios al contratar nuestros servicios"
-        description="Al ser cliente de NewNic estas y mas características te beneficiaran a lo largo de tu proyecto,."
+        description="Al ser cliente de NewNic estas y mas características te beneficiaran a lo largo de tu proyecto."
         small=""
         positionTitle={'right'}
         className="benefits-section"
