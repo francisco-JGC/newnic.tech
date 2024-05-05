@@ -14,3 +14,30 @@
     color: #09f;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .navigation-menu {
+    &-list {
+      flex-direction: column;
+
+      li {
+        animation: fadeIn 0.5s ease forwards;
+        a {
+          display: block;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
