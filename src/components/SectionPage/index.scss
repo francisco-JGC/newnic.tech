@@ -112,5 +112,11 @@
 @include mobile {
   .section-page {
     padding: 0 1em;
+
+    &-content {
+      &::before {
+        filter: blur(45px);
+      }
+    }
   }
 }
