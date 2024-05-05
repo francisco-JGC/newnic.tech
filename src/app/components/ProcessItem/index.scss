@@ -36,6 +36,43 @@
         font-size: 0.9em;
         text-align: justify;
         margin-top: 0.5em;
+        color: $text-color;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .process-item {
+    &__content {
+      .process-item-content {
+        width: calc($desktop / 3.5 - 4em);
+
+        h3 {
+          font-size: 1em;
+        }
+
+        p {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .process-item {
+    &__content {
+      .process-item-content {
+        width: 100%;
+
+        h3 {
+          font-size: 1em;
+        }
+
+        p {
+          font-size: 0.8em;
+        }
       }
     }
   }
