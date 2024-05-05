@@ -78,6 +78,7 @@ export default function Home() {
         className="about-section"
         id="about"
         positionTitle="left"
+        showBackground={true}
       >
         <About />
       </SectionPage>
