@@ -90,3 +90,39 @@
     }
   }
 }
+
+@include mobile {
+  .contact-section {
+    padding-bottom: 3em;
+
+    .submit-button {
+      width: 100%;
+      button {
+        width: 100%;
+      }
+    }
+
+    .social-media {
+      .contact-info {
+        flex-direction: column;
+        gap: 0.5em;
+      }
+    }
+
+    .contact-form {
+      .form-group {
+        [type='text'],
+        [type='email'],
+        textarea,
+        select {
+          padding: 0.5em;
+          font-size: 0.8em;
+        }
+
+        label {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
