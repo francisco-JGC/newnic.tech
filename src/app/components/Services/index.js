@@ -1,3 +1,4 @@
+'use client'
 import './index.scss'
 import { DivContent } from '@/components/DivContent'
 import devweb from '@/assets/images/dev-web.webp'
@@ -5,6 +6,8 @@ import devmobile from '@/assets/images/dev-mobile.webp'
 import devdesktop from '@/assets/images/dev-desktop.webp'
 import Image from 'next/image'
 import { NavLink } from '@/components/Navigation/navLink'
+import ScrollReveal from 'scrollreveal'
+import { useEffect } from 'react'
 
 const DATA_SERVICES = [
   {
@@ -41,6 +44,16 @@ const DATA_SERVICES = [
 ]
 
 export const Services = () => {
+  useEffect(() => {
+    DATA_SERVICES.forEach((_, index) => {
+      ScrollReveal().reveal(`.services-item-content:nth-child(${index + 1})`, {
+        delay: 200 * index,
+        duration: 500,
+        origin: 'top',
+        distance: '30px',
+      })
+    })
+  }, [])
   return (
     <section className="services">
       <div className="services__content">
