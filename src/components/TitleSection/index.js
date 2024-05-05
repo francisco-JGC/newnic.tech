@@ -1,4 +1,7 @@
+'use client'
 import './index.scss'
+import ScrollReveal from 'scrollreveal'
+import { useEffect } from 'react'
 
 export const TitleSection = ({
   title,
@@ -22,6 +25,20 @@ export const TitleSection = ({
     },
   }
 
+  useEffect(() => {
+    ScrollReveal().reveal('.title-section-small', {
+      duration: 500,
+      origin: 'top',
+      distance: '30px',
+    })
+
+    ScrollReveal().reveal('.title-section-h', {
+      duration: 900,
+      origin: 'top',
+      distance: '20px',
+    })
+  }, [])
+
   return (
     <section
       className="title-section"
@@ -35,6 +52,7 @@ export const TitleSection = ({
           style={{
             fontSize: '2em',
           }}
+          className="title-section-h"
         >
           {title}
         </h1>
@@ -43,6 +61,7 @@ export const TitleSection = ({
           style={{
             fontSize: '1.4em',
           }}
+          className="title-section-h"
         >
           {title}
         </h2>
