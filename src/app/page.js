@@ -3,6 +3,7 @@ import { CButton } from '@/components/CButton'
 import { NavLink } from '@/components/Navigation/navLink'
 import { SectionPage } from '@/components/SectionPage'
 import { ProcessItem } from './components/ProcessItem'
+import { Services } from './components/Services'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         small="ven y trabaja con nosotros"
         className={'home-section'}
         showBackground={true}
+        id="Home"
         titleSize="h1"
       >
         <CButton>
@@ -27,8 +29,9 @@ export default function Home() {
         description="Descubre cómo podemos llevar tu idea al siguiente nivel con nuestros servicios especializados."
         small="Por una nueva experiencia"
         className={'services-section'}
+        id="services"
       >
-        <div className="services-content"></div>
+        <Services />
       </SectionPage>
     </div>
   )
