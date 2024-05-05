@@ -125,9 +125,24 @@ export const Contact = () => {
             <option value="" selected disabled>
               Selecciona un servicio
             </option>
-            <option value="web">Desarrollo Web</option>
-            <option value="mobile">Desarrollo Móvil</option>
-            <option value="desktop">Desarrollo de Escritorio</option>
+            <option value="Soporte Web o Mobile">Soporte Web o Mobile</option>
+            <option value="Desarrollo de producto">
+              Desarrollo de producto
+            </option>
+            <option value="Diseño de interfaces UX/UI">
+              Diseño de interfaces UX/UI
+            </option>
+            <option value="Asesoramiento en desarrollo de software">
+              Asesoramiento en desarrollo de software
+            </option>
+            <option value="SEO">SEO</option>
+            <option value="Administración de base de datos">
+              Administración de base de datos
+            </option>
+            <option value="Manejo de Redes sociales">
+              Manejo de Redes sociales
+            </option>
+            <option value="Otro">Otro</option>
           </select>
         </div>
 
