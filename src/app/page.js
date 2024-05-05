@@ -8,6 +8,7 @@ import timeLapse from '@/assets/images/timelapse-services.webp'
 import Image from 'next/image'
 import { About } from './components/About'
 import { Benefits } from './components/Benefits'
+import { Contact } from './components/Contact'
 
 export default function Home() {
   return (
@@ -81,6 +82,17 @@ export default function Home() {
         showBackground={true}
       >
         <About />
+      </SectionPage>
+
+      <SectionPage
+        title="Contáctanos"
+        description="¿Listo para Dar Vida a tu Proyecto Digital? ¡Contáctanos y Descubre Cómo Podemos Ayudarte a Hacerlo Realidad!"
+        small=""
+        className="contact-section"
+        id="contact"
+        positionTitle="left"
+      >
+        <Contact />
       </SectionPage>
     </div>
   )
