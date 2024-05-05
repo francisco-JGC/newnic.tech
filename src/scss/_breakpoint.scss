@@ -13,3 +13,9 @@ $tablet: 750px;
     @content;
   }
 }
+
+@mixin mobile {
+  @media only screen and (max-width: $mobile) {
+    @content;
+  }
+}
