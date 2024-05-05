@@ -4,6 +4,9 @@ import { NavLink } from '@/components/Navigation/navLink'
 import { SectionPage } from '@/components/SectionPage'
 import { ProcessItem } from './components/ProcessItem'
 import { Services } from './components/Services'
+import timeLapse from '@/assets/images/timelapse-services.webp'
+import Image from 'next/image'
+import { Benefits } from './components/Benefits'
 
 export default function Home() {
   return (
@@ -29,9 +32,42 @@ export default function Home() {
         description="Descubre cómo podemos llevar tu idea al siguiente nivel con nuestros servicios especializados."
         small="Por una nueva experiencia"
         className={'services-section'}
+        showBackground={true}
         id="services"
       >
         <Services />
+      </SectionPage>
+
+      <SectionPage
+        title="Del Concepto a la Realidad Digital Tu Software Personalizado con Integración Perfecta"
+        description="Somos totalmente transparentes, por eso tu formaras parte del flujo
+        del desarrollo del software"
+        small="Por una nueva experiencia"
+        className={'services-section'}
+        showBackground={true}
+      >
+        <div className="time-lapse">
+          <Image
+            src={timeLapse}
+            alt="timeLapse"
+            objectFit="cover"
+            layout="responsive"
+            width={1920}
+            height={1080}
+            loading="lazy"
+          />
+        </div>
+      </SectionPage>
+
+      <SectionPage
+        title="Impulsando la Innovación Tecnológica con Pasión y Compromiso"
+        description=""
+        small=""
+        className="benefits-section"
+        id="benefits"
+        positionTitle="left"
+      >
+        <Benefits />
       </SectionPage>
     </div>
   )
