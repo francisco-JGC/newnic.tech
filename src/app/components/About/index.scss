@@ -100,3 +100,34 @@
     }
   }
 }
+
+@include mobile {
+  .about-content {
+    &__info {
+      .about-content__text,
+      .about-content__img {
+        width: 100%;
+      }
+    }
+
+    .about-content__img {
+      justify-content: center;
+    }
+
+    &__icons {
+      .icons-info-about {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 2em;
+        text-align: center;
+
+        .icon-item {
+          width: 100%;
+          h2 {
+            font-size: 1.5em;
+          }
+        }
+      }
+    }
+  }
+}
