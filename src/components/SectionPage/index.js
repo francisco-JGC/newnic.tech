@@ -1,8 +1,6 @@
 import './index.scss'
-
 import { TitleSection } from '../TitleSection'
-import Image from 'next/image'
-import backgroundBlock from '@/assets/images/background-section.webp'
+
 export const SectionPage = ({
   title,
   description,
@@ -12,20 +10,25 @@ export const SectionPage = ({
   showBackground = false,
   titleSize,
   id,
+  positionTitle,
 }) => {
   return (
     <div className={`section-page`} id={id}>
       <section className={`section-page-content ${className}`}>
         {showBackground && (
-          <div className="section-page-background">
-            <Image src={backgroundBlock} alt={title} />
+          <div className="lines">
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
           </div>
         )}
+
         <TitleSection
           title={title}
           description={description}
           small={small}
           titleSize={titleSize}
+          positionTitle={positionTitle}
         />
         {children}
       </section>
