@@ -48,3 +48,43 @@
     }
   }
 }
+
+@include desktop {
+  .services {
+    &__content {
+      .services-item-content {
+        width: calc($desktop / 3.5 - 5em);
+        height: 400px;
+        transform: scale(1) !important;
+
+        h3 {
+          font-size: 1em;
+        }
+
+        p {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .services {
+    &__content {
+      .services-item-content {
+        width: calc($tablet / 2 - 3em);
+        height: 400px;
+        transform: scale(1) !important;
+
+        h3 {
+          font-size: 1em;
+        }
+
+        p {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
