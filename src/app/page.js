@@ -7,6 +7,7 @@ import { Services } from './components/Services'
 import timeLapse from '@/assets/images/timelapse-services.webp'
 import Image from 'next/image'
 import { About } from './components/About'
+import { Benefits } from './components/Benefits'
 
 export default function Home() {
   return (
@@ -60,6 +61,17 @@ export default function Home() {
       </SectionPage>
 
       <SectionPage
+        title="Descubre los Beneficios al contratar nuestros servicios"
+        description="Al ser cliente de NewNic estas y mas características te beneficiaran a lo largo de tu proyecto,."
+        small=""
+        positionTitle={'right'}
+        className="benefits-section"
+        id={'benefits'}
+      >
+        <Benefits />
+      </SectionPage>
+
+      <SectionPage
         title="Impulsando la Innovación Tecnológica con Pasión y Compromiso"
         description=""
         small=""
@@ -69,13 +81,6 @@ export default function Home() {
       >
         <About />
       </SectionPage>
-
-      <SectionPage
-        title="Descubre los Beneficios al contratar nuestros servicios"
-        description="Al ser cliente de NewNic estas y mas características te beneficiaran a lo largo de tu proyecto,."
-        small=""
-        positionTitle={'right'}
-      ></SectionPage>
     </div>
   )
 }
