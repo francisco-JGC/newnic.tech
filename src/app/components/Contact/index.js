@@ -50,21 +50,21 @@ export const Contact = () => {
       <div className="social-media">
         <div className="social-media-icons">
           <NavLink
-            href="https://www.facebook.com/newnicsoftware"
+            href="https://www.facebook.com/profile.php?id=61557900209449"
             target="_blank"
           >
             <ContentIcon icon={facebook} />
           </NavLink>
 
           <NavLink
-            href="https://www.instagram.com/newnicsoftware/"
+            href="https://www.instagram.com/newnic.tech/"
             target="_blank"
           >
             <ContentIcon icon={instagram} />
           </NavLink>
 
           <NavLink
-            href="https://www.linkedin.com/company/newnicsoftware/"
+            href="https://www.linkedin.com/company/newnic/about/"
             target="_blank"
           >
             <ContentIcon icon={linkedin} />
